@@ -5,13 +5,22 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
+
 export class NavBarComponent implements OnInit {
+
   loggedIn: boolean = false;
+
   ngOnInit(): void {
   }
 
-  signIn(state: boolean) {
-    console.log({state});
-    this.loggedIn = state;
+  signIn() {
+    this.loggedIn = true;
+    console.log('sign in', this.loggedIn);
   }
+
+  signOut() {
+    this.loggedIn = false;
+    console.log('sign out', this.loggedIn);
+  }
+
 }

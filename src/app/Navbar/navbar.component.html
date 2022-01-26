@@ -25,10 +25,10 @@
         </a>
       </li>
       <li class="nav-item" *ngIf="loggedIn">
-        <button type="button" class="nav-link" (click)="signIn(true)">Sign In</button>
+        <button type="button" class="btn btn-primary" (click)="signOut()">Sign Out</button>
       </li>
       <li class="nav-item" *ngIf="!loggedIn">
-        <button type="button" class="nav-link" (click)="signIn(false)">Sign Out</button>
+        <button type="button" class="btn btn-primary" (click)="signIn()">Sign In</button>
       </li>
     </ul>
   </nav>
