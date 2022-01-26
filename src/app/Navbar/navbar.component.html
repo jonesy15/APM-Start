@@ -3,24 +3,24 @@
       <img class="logo" src="./assets/images/Logo.png" alt="Quanta Systems" style="scale: 0.1;" height="24">
     </a>
     <ul class="navbar-nav mx-auto">
-      <li class="nav-item">
+      <li *ngIf="loggedIn" class="nav-item">
         <a class="nav-link small" [routerLink]="['/AboutUs']" routerLinkActive="active-link">
-          About Us
+          Fleet Overview
         </a>
       </li>
-      <li class="nav-item">
+      <li *ngIf="loggedIn" class="nav-item">
         <a class="nav-link small" [routerLink]="['/Employees']" routerLinkActive="active-link">
           Employees
         </a>
       </li>
-      <li  class="nav-item">
+      <li  *ngIf="loggedIn" class="nav-item">
         <a class="nav-link small" [routerLink]="['/Drivers']" routerLinkActive="active-link">
           Driver Hours
         </a>
       </li>
-      <li  class="nav-item" [routerLink]="['/ComingSoon']" routerLinkActive="active-link">
+      <li  *ngIf="loggedIn" class="nav-item" [routerLink]="['/ComingSoon']" routerLinkActive="active-link">
         <a class="nav-link small">
-          Coming Soon
+          Breakdown Report
         </a>
       </li>
       <li class="nav-item" *ngIf="loggedIn">

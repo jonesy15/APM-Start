@@ -6,6 +6,7 @@ import {Component, OnInit} from '@angular/core';
     styleUrls: ['./employees.component.css']
 })
 export class EmployeesComponent implements OnInit {
+
       ngOnInit(): void{
       }
 }

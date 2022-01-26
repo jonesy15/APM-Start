@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 
 export class DriverService {
 
-  private baseUrl =  'https://httms-hackathonapp.azurewebsites.net/api/Data';
+  private baseUrl = 'https://httms-hackathonapp.azurewebsites.net/api/Data';
 
   constructor(
     private http: HttpClient) { }
@@ -15,6 +15,11 @@ export class DriverService {
   addData() {
     var url = this.baseUrl + '/AddData';
     return this.http.post(url, null, null);
+  }
+
+  getData() {
+    var url = this.baseUrl + '/getData';
+    return this.http.get(url, null);
   }
 
 }
