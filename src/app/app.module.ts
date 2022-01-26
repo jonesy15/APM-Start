@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './Products/product-list.component';
 import { NavBarComponent } from './Navbar/navbar.component';
+import { EmployeesComponent } from './Employees/employees.component';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -12,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
     AppComponent,
     ProductListComponent,
     NavBarComponent,
+    EmployeesComponent,
   ],
   imports: [
     BrowserModule,
