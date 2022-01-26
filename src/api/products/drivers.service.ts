@@ -1,4 +1,4 @@
-/* import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
@@ -7,15 +7,14 @@ import { HttpClient } from '@angular/common/http';
 
 export class DriverService {
 
-  private baseUrl = environment.resources.tmsApi.resourceUri + '/Driver';
-
+  private baseUrl =  'https://httms-hackathonapp.azurewebsites.net/api/Data';
 
   constructor(
     private http: HttpClient) { }
 
-  getDriver() {
-    var url = this.baseUrl + '/GetDriver';
-    return this.http.get(url, this.globals.httpOptions);
+  addData() {
+    var url = this.baseUrl + '/AddData';
+    return this.http.post(url, null, null);
   }
 
-} */
+}
