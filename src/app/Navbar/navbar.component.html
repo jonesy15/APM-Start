@@ -4,12 +4,12 @@
     </a>
     <ul class="navbar-nav mx-auto">
       <li class="nav-item">
-        <a class="nav-link small">
+        <a class="nav-link small" [routerLink]="['/AboutUs']" routerLinkActive="active-link">
           About Us
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link small">
+        <a class="nav-link small" [routerLink]="['/Employees']" routerLinkActive="active-link">
           Employees
         </a>
       </li>
@@ -18,7 +18,7 @@
           Driver Hours
         </a>
       </li>
-      <li  class="nav-item">
+      <li  class="nav-item" [routerLink]="['/ComingSoon']" routerLinkActive="active-link">
         <a class="nav-link small">
           Coming Soon
         </a>
