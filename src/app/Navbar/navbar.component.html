@@ -24,6 +24,12 @@
           Coming Soon
         </a>
       </li>
+      <li class="nav-item" *ngIf="loggedIn">
+        <button type="button" class="nav-link" (click)="signIn(true)">Sign In</button>
+      </li>
+      <li class="nav-item" *ngIf="!loggedIn">
+        <button type="button" class="nav-link" (click)="signIn(false)">Sign Out</button>
+      </li>
     </ul>
   </nav>
 </div>
