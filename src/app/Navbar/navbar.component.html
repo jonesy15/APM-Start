@@ -1,0 +1,29 @@
+<div class='card'>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" [routerLink]="['/']">
+      <img class="logo" src="./assets/images/Logo.png" alt="Quanta Systems" style="scale: 0.1;">
+    </a>
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+        <a class="nav-link small">
+          About Us
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link small">
+          Employees
+        </a>
+      </li>
+      <li  class="nav-item">
+        <a class="nav-link small" [routerLink]="['/Drivers']" routerLinkActive="active-link">
+          Driver Hours
+        </a>
+      </li>
+      <li  class="nav-item">
+        <a class="nav-link small">
+          Coming Soon
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
